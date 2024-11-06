@@ -12,6 +12,20 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-        // Replace this comment with the rest of your code
+        
+		//set the time of the day to AM
+		String timeOfTheDay = "AM";
+
+		//set the time to PM if it's after midday
+		if(hours>=12){
+			timeOfTheDay = "PM";
+			
+			//make sure that hours after midday will be in the range of 0-12 
+			if(hours>12)
+				{hours -= 12;}
+		}
+	
+		//print the hour in the requiered format
+		System.out.println(hours + ":" + minutes + " " + timeOfTheDay);
 	}
 }
