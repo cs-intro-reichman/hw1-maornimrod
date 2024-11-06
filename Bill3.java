@@ -10,6 +10,6 @@ public class Bill3 {
 		//calculating the value that each needs to pay by deviding the bill to 3 and print it
 		double eachPays = Math.ceil((double)fullBill/3);
 
-		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + ": pay " + eachPays + " Shekels each");
+		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + ": pay " + eachPays + " Shekels each.");
 	}
 }

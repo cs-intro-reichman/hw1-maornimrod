@@ -25,7 +25,13 @@ public class TimeFormat {
 				{hours -= 12;}
 		}
 	
-		//print the hour in the requiered format
-		System.out.println(hours + ":" + minutes + " " + timeOfTheDay);
+		//make sure to print the minutes that are less then 10 with a zero before
+		if(minutes<10){
+			//print the hour in the requiered format 
+			System.out.println(hours + ":0" + minutes + " " + timeOfTheDay);
+		} else{
+			//print the hour in the requiered format
+			System.out.println(hours + ":" + minutes + " " + timeOfTheDay);
+	 }
 	}
 }
