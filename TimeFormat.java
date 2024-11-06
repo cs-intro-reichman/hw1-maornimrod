@@ -30,7 +30,6 @@ public class TimeFormat {
 			//print the hour in the requiered format 
 			System.out.println(hours + ":0" + minutes + " " + timeOfTheDay);
 		} else{
-			//print the hour in the requiered format
 			System.out.println(hours + ":" + minutes + " " + timeOfTheDay);
 	 }
 	}
